@@ -50,4 +50,12 @@ final class LetterFactory {
         
         return (armenian, russian)
     }
+    
+    func indexLetter(index: Int) -> [String] {
+        return dict[index]
+    }
+    
+    func count() -> Int {
+        return dict.count
+    }
 }

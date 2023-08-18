@@ -13,6 +13,8 @@
 		D0193E28295F0AA1004F4850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0193E26295F0AA1004F4850 /* LaunchScreen.storyboard */; };
 		D0193E31295F129F004F4850 /* LetterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0193E30295F129F004F4850 /* LetterFactory.swift */; };
 		D05CF8FA2A8906CD00C5AE25 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CF8F92A8906CC00C5AE25 /* LetterViewController.swift */; };
+		D05CF8FC2A8966EF00C5AE25 /* AlphabetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CF8FB2A8966EF00C5AE25 /* AlphabetViewController.swift */; };
+		D05CF8FE2A89746200C5AE25 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05CF8FD2A89746200C5AE25 /* HelpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D0193E29295F0AA1004F4850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0193E30295F129F004F4850 /* LetterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterFactory.swift; sourceTree = "<group>"; };
 		D05CF8F92A8906CC00C5AE25 /* LetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterViewController.swift; sourceTree = "<group>"; };
+		D05CF8FB2A8966EF00C5AE25 /* AlphabetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetViewController.swift; sourceTree = "<group>"; };
+		D05CF8FD2A89746200C5AE25 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				D0193E1B295F0A9C004F4850 /* AppDelegate.swift */,
 				D0193E1D295F0A9C004F4850 /* SceneDelegate.swift */,
 				D05CF8F92A8906CC00C5AE25 /* LetterViewController.swift */,
+				D05CF8FB2A8966EF00C5AE25 /* AlphabetViewController.swift */,
+				D05CF8FD2A89746200C5AE25 /* HelpViewController.swift */,
 				D0193E24295F0AA1004F4850 /* Assets.xcassets */,
 				D0193E26295F0AA1004F4850 /* LaunchScreen.storyboard */,
 				D0193E29295F0AA1004F4850 /* Info.plist */,
@@ -146,8 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D05CF8FA2A8906CD00C5AE25 /* LetterViewController.swift in Sources */,
+				D05CF8FE2A89746200C5AE25 /* HelpViewController.swift in Sources */,
 				D0193E1C295F0A9C004F4850 /* AppDelegate.swift in Sources */,
 				D0193E31295F129F004F4850 /* LetterFactory.swift in Sources */,
+				D05CF8FC2A8966EF00C5AE25 /* AlphabetViewController.swift in Sources */,
 				D0193E1E295F0A9C004F4850 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
