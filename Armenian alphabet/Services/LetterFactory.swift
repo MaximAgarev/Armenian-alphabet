@@ -51,8 +51,16 @@ final class LetterFactory {
         return (armenian, russian)
     }
     
-    func indexLetter(index: Int) -> [String] {
+    func letterByIndex(index: Int) -> [String] {
         return dict[index]
+    }
+    
+    func indexOfLetter(letter: String) -> Int {
+        guard let index = dict.firstIndex(where: { $0[0] == letter }) else {
+            guard let index = dict.firstIndex(where: { $0[1] == letter }) else { return 0 }
+            return index
+        }
+        return index
     }
     
     func count() -> Int {

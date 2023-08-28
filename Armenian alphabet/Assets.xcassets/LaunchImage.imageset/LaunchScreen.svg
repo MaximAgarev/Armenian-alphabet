@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 428 926" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="926" width="428" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer-1" vectornator:layerName="Layer 1">
+<path d="M0 0L428 0L428 309L0 309L0 0Z" fill="#d90012" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Rectangle 1"/>
+<path d="M-5.68434e-14 309L428 309L428 618L-5.68434e-14 618L-5.68434e-14 309Z" fill="#0033a0" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Rectangle 3"/>
+<path d="M-5.68434e-14 617L428 617L428 926L-5.68434e-14 926L-5.68434e-14 617Z" fill="#f2a800" fill-rule="nonzero" opacity="1" stroke="none" vectornator:layerName="Rectangle 2"/>
+<path d="M77.8535 588.21L121.421 364.93C129.771 322.09 145.291 290.685 167.983 270.717C190.674 250.749 221.806 240.765 261.379 240.765C277.717 240.765 293.328 242.943 308.213 247.3C323.098 251.657 337.076 258.373 350.146 267.449L324.006 302.847C314.93 296.313 305.127 291.23 294.598 287.599C284.07 283.968 272.997 282.153 261.379 282.153C234.513 282.153 214.091 289.324 200.113 303.665C186.135 318.005 175.879 341.694 169.344 374.733L133.946 556.079L255.388 580.586C284.07 586.394 304.401 596.016 316.382 609.449C328.363 622.882 334.353 640.49 334.353 662.274L334.353 686.235L285.34 686.235L285.34 668.809C285.34 655.012 281.801 644.121 274.721 636.133C267.642 628.146 257.748 622.882 245.042 620.341L77.8535 588.21Z" fill="none" opacity="1" stroke="#ffffff" stroke-linecap="butt" stroke-linejoin="round" stroke-width="13.4265" vectornator:layerName="path"/>
+</g>
+</svg>

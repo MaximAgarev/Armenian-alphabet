@@ -2,6 +2,10 @@ import UIKit
 
 final class AlphabetViewController: UIViewController {
     
+    //MARK: - Private properties
+    private var position: Int?
+    
+    //MARK: - Layout elements
     private lazy var headerLabel: UILabel = {
         let headerLabel = UILabel()
         headerLabel.text = "Алфавит"
@@ -38,6 +42,7 @@ final class AlphabetViewController: UIViewController {
         return closeButton
     }()
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,6 +53,29 @@ final class AlphabetViewController: UIViewController {
         addAlphabetTable()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if let position = position {
+            alphabetTable.selectRow(at: [0, position], animated: true, scrollPosition: .middle)
+            alphabetTable.scrollToRow(at: [0, position], at: .middle, animated: true)
+        }
+    }
+    
+    init(position: Int?) {
+        super.init(nibName: nil, bundle: nil)
+        self.position = position
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    // MARK: - Private Methods
+    @objc
+    private func didTapCloseButton(sender: Any) {
+        self.dismiss(animated: true)
+    }
+    
+    // MARK: - Layout Methods
     private func addHeaderLabel() {
         view.addSubview(headerLabel)
         headerLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -75,16 +103,11 @@ final class AlphabetViewController: UIViewController {
             closeButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
             closeButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             closeButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
-            
         ])
-    }
-    
-    @objc
-    private func didTapCloseButton(sender: Any) {
-        self.dismiss(animated: true)
     }
 }
 
+// MARK: - Extensions
 extension AlphabetViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return LetterFactory().count()
@@ -92,11 +115,19 @@ extension AlphabetViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath as IndexPath)
-        let capital = LetterFactory().indexLetter(index: indexPath.row)[0]
-        let small = LetterFactory().indexLetter(index: indexPath.row)[1]
-        let russian = LetterFactory().indexLetter(index: indexPath.row)[2]
+        let capital = LetterFactory().letterByIndex(index: indexPath.row)[0]
+        let small = LetterFactory().letterByIndex(index: indexPath.row)[1]
+        let russian = LetterFactory().letterByIndex(index: indexPath.row)[2]
+        cell.backgroundColor = .white
+        cell.textLabel?.textColor = .black
         cell.textLabel?.text = "\(capital), \(small) -- [\(russian)]"
-        cell.selectionStyle = .none
+        cell.textLabel?.highlightedTextColor = .white
+        
+        let view = UIView()
+        view.backgroundColor = .systemBlue
+        view.tintColor = .cyan
+        cell.selectedBackgroundView = view
+        
         return cell
     }
 }
